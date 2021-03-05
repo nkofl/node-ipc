@@ -24,6 +24,8 @@ class Defaults{
         this.appspace='app.';
         this.socketRoot='/tmp/';
         this.id=os.hostname();
+        this.readableAll = false
+        this.writableAll = false
 
         this.encoding='utf8';
         this.rawBuffer=false;

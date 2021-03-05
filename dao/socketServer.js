@@ -309,7 +309,7 @@ function startServer() {
         }
 
         this.server.listen(
-            this.path,
+            { path: this.path, readableAll: this.config.readableAll, writableAll: this.config.writableAll },
             this.onStart.bind(this)
         );
 
